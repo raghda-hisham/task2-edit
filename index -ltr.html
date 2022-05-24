@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--./styles-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.5/swiper-bundle.css" integrity="sha512-FaNMmVTIJuY9h9nJoygs85xfABCEB70VrFRwHgrSD0Eiw25Px+ehJZYzTDzrqnJjUoq3+XE7LkDvdPZWL/zAxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="css/style.css" rel="stylesheet">
+       
+        <link rel="icon" href="imgs/ET-Sports-en.png" type="image/gif" sizes="16x16">
+        <title>task</title>
+    </head>
+    <body class="">
+        <!---------------------------------subnav---------------------------------->
+       <div class="sub-nav w-100  d-flex align-items-center">
+                <i class="fa-solid fa-bell sub-nav-icon rounded-circle d-lg-none d-m-none d-block text-center"></i>
+                <i class="fa-solid fa-bars sub-nav-icon sub-nav-menu d-lg-block d-m-block d-none openbtn" onclick="openNav()" ></i>
+                <img class="logo h-100" src="imgs/ET-Sports-en.png" alt="logo">
+                <div id="mySidebar" class="sidebar">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Clients</a>
+                        <a href="#">Contact</a>
+                        <a href="index.html">عربي</a>
+                </div>
+        </div>
+       
+
+
+
+        <!----------------------------------sports-tabs--------------------------->
+        <nav>
+
+                <ul class="nav nav-pills mb-3   d-flex justify-content-around bg-dark mb-4 fle-nowarp" id="pills-tab" role="tablist">
+                        <li class="nav-item dropdown" role="presentation">
+                          <button class="nav-link active  dropdown-toggle" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                <i class="fa-solid fa-futbol text-center d-block"></i>
+                                <div class="d-inline-block">football</div>     
+                                <!-- <ul class="dropdown-menu2 nav-pills">
+                                        <li class="nav-item" role="presentation">
+                                                <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                                      <div class="d-inline-block">كرة</div>                        
+                                                 </a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                                <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                                      <div class="d-inline-block">كرة </div>                        
+                                        </a>
+                                        </li>
+
+                                </ul>                    -->
+                          </button>
+                        </li>
+                        
+                        <li class="nav-item" role="presentation">
+                                <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="false">
+                                      <i class="fa-solid fa-futbol text-center d-block"></i>
+                                      <div class="d-inline-block">volleyball</div>                        
+                                </button>
+                              </li>
+                                                      
+                        <li class="nav-item" role="presentation">
+                                <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="false">
+                                      <i class="fa-solid fa-futbol text-center d-block"></i>
+                                      <div class="d-inline-block">swimming </div>                        
+                                </button>
+                              </li>
+                        <li class="nav-item" role="presentation">
+                                <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="false">
+                                      <i class="fa-solid fa-futbol text-center d-block"></i>
+                                      <div class="d-inline-block">swimming </div>                        
+                                </button>
+                         </li>
+                                                      
+                        <li class="nav-item" role="presentation">
+                                <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="false">
+                                      <i class="fa-solid fa-futbol text-center d-block"></i>
+                                      <div class="d-inline-block">tennis </div>                        
+                                </button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="false">
+                                      <i class="fa-solid fa-futbol text-center d-block"></i>
+                                      <div class="d-inline-block">tennis </div>                        
+                                </button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="false">
+                                      <i class="fa-solid fa-futbol text-center d-block"></i>
+                                      <div class="d-inline-block">tennis </div>                        
+                                </button>
+                              </li>
+                </ul>
+        </nav>
+        <header>
+                                <!-- Tab panes -->
+
+                                <div class="tab-content w-100 h-100" id="pills-tabContent">
+                                        <div class="tab-pane fade show active h-100" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                                <div class="tab-content-text d-md-block">
+                                                        <p class="text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                        Magnam cupidittorequi architecto sint minus iste in a.
+                                                        </p>
+                                                    </div>
+                                        </div>
+                                        <div class="tab-pane fade h-100" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                                <div class="tab-content-text d-md-block">
+                                                <p class="text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                Magnam cupidittorequi architecto sint minus iste in a.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade h-100" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                             <div class="tab-content-text d-md-block">
+                                                <p class="text-light">Lorem ععععععععععععععععععععععععععععععععععععععععععععععععععععععععععععععععععععععععععععععع iste in a.
+                                                </p>
+                                            </div>
+                                        </div>
+                                </div>                          
+                
+        </header>
+
+                                
+
+    
+
+        <!------------------------------------Championships---------------------->
+        <section class="Championships px-4 py-5 bg-dark mt-4">
+                <div class="mb-3 bg-primary">
+                        <ul class="nav nav-pills mb-3 champ-header d-flex justify-content-around bg-dark mb-4" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link nav-link2 active text-light" id="pills-today-tab" data-bs-toggle="pill" data-bs-target="#pills-today" type="button" role="tab" aria-controls="pills-today" aria-selected="true">
+                                        <div class="day">yesterday</div>
+                                        <div class="day-date">31 sep</div>
+                                 </button>
+                                </li>
+                                
+                                <li class="nav-item" role="presentation">
+                                        <button class="nav-link nav-link2 text-light" id="pills-yasterday-tab" data-bs-toggle="pill" data-bs-target="#pills-yasterday" type="button" role="tab" aria-controls="pills-yasterday" aria-selected="false">
+                                                <div class="day">today</div>
+                                                <div class="day-date">31 sep</div>
+                                </button>
+                                </li>
+                                                              
+                                <li class="nav-item" role="presentation">
+                                        <button class="nav-link nav-link2 text-light" id="pills-tommorw-tab" data-bs-toggle="pill" data-bs-target="#pills-tomorrow" type="button" role="tab" aria-controls="pills-tomorrow" aria-selected="false">
+                                                <div class="day">tommorw</div>
+                                                <div class="day-date">31 sep</div>
+                                </button>
+                                </li>
+                                                              
+                        </ul>
+                </div>
+                <div class="tab-content w-100 p-0 m-0" id="pills-tabContent">
+                   <div class="tab-pane fade show active w-100 h-100" id="pills-yasterday" role="tabpanel" aria-labelledby="pills-yasterday-tab">
+                        <div class="cham cham-africa d-flex justify-content-center align-items-center  ">
+                                1 بطولة الامم الافريقية
+                        </div>
+
+                        <div class="cham d-flex text-light justify-content-around align-items-center">
+                                <div>
+                                        <img class="egy-img rounded-circle" src="imgs/Flag_of_Egypt.svg.png" alt="egypt">
+                                        <div class="text-center">egypt</div>
+                                </div>
+                                <div class="">
+                                        <div class="rounded-pill  px-3 mb-2 fw-bold text-danger champ-start">لم تبدأ</div>
+                                        <div class="text-center champ-start-date">8:00 pm</div>
+                                </div>
+                                <div>
+                                        <img class="egy-img rounded-circle" src="imgs/Flag_of_Egypt.svg.png" alt="egypt">
+                                        <div class="text-center">egypt</div>
+                                </div>
+                        </div>
+
+                        <div class="cham d-flex champ-place text-bold fs-6 fw-bold justify-content-between  align-items-center ">
+                                        <div>osn<bdi> يعرض على :</div>
+                                        <div>الاستاد القاهرة :</div>
+                        </div>
+                        <div class=" cham all-champ border-top py-3 text-center fw-bold">عرض كل البطولات</div>
+                    </div><!--./tab-pane-->
+                    <div class="tab-pane fade  cham w-100 h-100" id="pills-today" role="tabpanel" aria-labelledby="pills-today-tab">
+                        <div class="col  cham-africa d-flex justify-content-center align-items-center  ">
+                                2 بطولة الامم الافريقية
+                        </div>
+
+                        <div class="col d-flex cham text-light justify-content-around align-items-center">
+                                <div>
+                                        <img class="egy-img rounded-circle" src="imgs/Flag_of_Egypt.svg.png" alt="egypt">
+                                        <div class="text-center">مصر</div>
+                                </div>
+                                <div class="">
+                                        <div class="rounded-pill  px-3 mb-2 fw-bold text-danger champ-start">لم تبدأ</div>
+                                        <div class="text-center champ-start-date">8:00 pm</div>
+                                </div>
+                                <div>
+                                        <img class="egy-img rounded-circle" src="imgs/Flag_of_Egypt.svg.png" alt="egypt">
+                                        <div class="text-center">مصر</div>
+                                </div>
+                        </div>
+
+                        <div class="col d-flex cham champ-place text-bold fs-6 fw-bold justify-content-between  align-items-center ">
+                                        <div>osn<bdi> يعرض على :</div>
+                                        <div>الاستاد القاهرة :</div>
+                        </div>
+                        <div class="all-champ cham border-top py-3 text-center fw-bold">عرض كل البطولات</div>
+                    </div><!--./tab-pane-->
+                    <div class="tab-pane fade   w-100 h-100" id="pills-tomorrow" role="tabpanel" aria-labelledby="pills-tomorrow-tab">
+                        <div class="col cham cham-africa d-flex justify-content-center align-items-center  ">
+                                3 بطولة الامم الافريقية
+                        </div>
+
+                        <div class="col d-flex cham text-light justify-content-around align-items-center">
+                                <div>
+                                        <img class="egy-img rounded-circle" src="imgs/Flag_of_Egypt.svg.png" alt="egypt">
+                                        <div class="text-center">مصر</div>
+                                </div>
+                                <div class="">
+                                        <div class="rounded-pill  px-3 mb-2 fw-bold text-danger champ-start">لم تبدأ</div>
+                                        <div class="text-center champ-start-date">8:00 pm</div>
+                                </div>
+                                <div>
+                                        <img class="egy-img rounded-circle" src="imgs/Flag_of_Egypt.svg.png" alt="egypt">
+                                        <div class="text-center">مصر</div>
+                                </div>
+                        </div>
+
+                        <div class="col d-flex cham champ-place text-bold fs-6 fw-bold justify-content-between  align-items-center ">
+                                        <div>osn<bdi> يعرض على :</div>
+                                        <div>الاستاد القاهرة :</div>
+                        </div>
+                        <div class="all-champ cham border-top py-3 text-center fw-bold">عرض كل البطولات</div>
+                    </div><!--./tab-pane-->
+                </div><!--./tab-content-->
+        </section>
+
+
+        
+<!-- 
+        <section class="Championships px-4 py-5 bg-dark mt-4 d-flex flex-column justify-content-between">
+                <div class="mb-3">
+                        <div class="champ-header col d-flex justify-content-around text-light ">
+                                <div class="champ-header-days d-flex flex-column justify-content-center align-items-center">
+                                        <div class="day">الامس</div>
+                                        <div class="day-date">31 sep</div>
+                                </div>
+                                <div class="champ-header-days today d-flex flex-column justify-content-center align-items-center">
+                                        <div class="day">الامس</div>
+                                        <div class="day-date">31 sep</div>
+                                </div>
+                                <div class="champ-header-days d-flex flex-column justify-content-center align-items-center">
+                                        <div class="day">الامس</div>
+                                        <div class="day-date">31 sep</div>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="col  cham-africa d-flex justify-content-center align-items-center ">
+                        بطولة الامم الافريقية
+                </div>
+
+                <div class="col d-flex text-light justify-content-around align-items-center">
+                        <div>
+                                <img class="egy-img rounded-circle" src="imgs/Flag_of_Egypt.svg.png" alt="egypt">
+                                <div class="text-center">مصر</div>
+                        </div>
+                        <div class="">
+                                <div class="rounded-pill  px-3 mb-2 fw-bold text-danger champ-start">لم تبدأ</div>
+                                <div class="text-center champ-start-date">8:00 pm</div>
+                        </div>
+                        <div>
+                                <img class="egy-img rounded-circle" src="imgs/Flag_of_Egypt.svg.png" alt="egypt">
+                                <div class="text-center">مصر</div>
+                        </div>
+                </div>
+
+                <div class="col d-flex champ-place text-bold fs-6 fw-bold justify-content-between  align-items-center ">
+                                <div>osn<bdi> يعرض على :</div>
+                                <div>الاستاد القاهرة :</div>
+                </div>
+                <div class="all-champ border-top py-3 text-center fw-bold">عرض كل البطولات</div>
+        </section> -->
+        <!------------------------------------------champ-carsoul----------------->
+        <section  class="champ-carsoul bg-dark py-5 mt-4">
+            <!-------champ0title------>
+            <div class="footer-title d-flex justify-content-between px-3 mb-5 ">
+                <div class="studio text-light">البطولات</div>
+                <div class="more"><a>المزيد</a></div>
+            </div>
+            
+            <!-------chapm-slider------>
+            <div class="swiper mySwiper mySwiper2 ">
+                <div class="swiper-wrapper swiper-wrapper2">
+
+                    <!--slide1-->
+                      <!--slide2-->
+                      <div class="swiper-slide swiper-slide2 shadow rounder d-flex pt-1 px-3 ">
+                        <div class="swiper-content h-100 w-50 d-flex flex-column text-end py-2">
+                            <h5>بطولة الامم الافريقية</h5>
+                            <div class="match-details d-flex flex-column h-75  justify-content-center">
+                                <div class=" next-match text-dark mb-2">المبارة القادمة</div>
+                                <div class="match-vs w-100 d-flex justify-content-around align-items-center">
+                                    <img src="imgs/Flag_of_Egypt.svg.png" class="egypt-icon" >
+                                    <span class="rounder-circle ">vs</span>
+                                    <img src="imgs/Flag_of_Egypt.svg.png" class="egypt-icon" >
+                                </div>
+                            </div>
+                            <div class="match-time d-flex justify-content-around">
+                                <div class="fs-8">8:00</div>
+                                <div class="fs-8">30-3-2020</div>
+                            </div>
+                       </div><!--/swiper-content-->
+                          <div class="match-logo text-center">
+                              <img src="imgs/caflogo_black.png" class="w-50 h-50 " alt="match-country">
+                          </div><!--/match-logo-->
+                      </div>
+
+
+                      <!--slide2-->
+                      <div class="swiper-slide swiper-slide2 shadow rounder d-flex pt-1 px-3 ">
+                        <div class="swiper-content h-100 w-50 d-flex flex-column text-end py-2">
+                            <h5>بطولة الامم الافريقية</h5>
+                            <div class="match-details d-flex flex-column h-75  justify-content-center">
+                                <div class=" next-match text-dark mb-2">المبارة القادمة</div>
+                                <div class="match-vs w-100 d-flex justify-content-around align-items-center">
+                                    <img src="imgs/Flag_of_Egypt.svg.png" class="egypt-icon" >
+                                    <span class="rounder-circle ">vs</span>
+                                    <img src="imgs/Flag_of_Egypt.svg.png" class="egypt-icon" >
+                                </div>
+                            </div>
+                            <div class="match-time d-flex justify-content-around">
+                                <div class="fs-8">8:00</div>
+                                <div class="fs-8">30-3-2020</div>
+                            </div>
+                       </div><!--/swiper-content-->
+                          <div class="match-logo text-center">
+                              <img src="imgs/caflogo_black.png" class="w-50 h-50 " alt="match-country">
+                          </div><!--/match-logo-->
+                      </div>
+
+                      <!--slide3-->
+                      <div class="swiper-slide swiper-slide2 shadow rounder d-flex pt-1 px-3 ">
+                        <div class="swiper-content h-100 w-50 d-flex flex-column text-end py-2">
+                            <h5>بطولة الامم الافريقية</h5>
+                            <div class="match-details d-flex flex-column h-75  justify-content-center">
+                                <div class=" next-match text-dark mb-2">المبارة القادمة</div>
+                                <div class="match-vs w-100 d-flex justify-content-around align-items-center">
+                                    <img src="imgs/Flag_of_Egypt.svg.png" class="egypt-icon" >
+                                    <span class="rounder-circle ">vs</span>
+                                    <img src="imgs/Flag_of_Egypt.svg.png" class="egypt-icon" >
+                                </div>
+                            </div>
+                            <div class="match-time d-flex justify-content-around">
+                                <div class="fs-8">8:00</div>
+                                <div class="fs-8">30-3-2020</div>
+                            </div>
+                       </div><!--/swiper-content-->
+                          <div class="match-logo text-center">
+                              <img src="imgs/caflogo_black.png" class="w-50 h-50 " alt="match-country">
+                          </div><!--/match-logo-->
+                      </div>
+
+
+                      <!--slide4-->
+                      <!--slide2-->
+                      <div class="swiper-slide swiper-slide2 shadow rounder d-flex pt-1 px-3 ">
+                        <div class="swiper-content h-100 w-50 d-flex flex-column text-end py-2">
+                            <h5>بطولة الامم الافريقية</h5>
+                            <div class="match-details d-flex flex-column h-75  justify-content-center">
+                                <div class=" next-match text-dark mb-2">المبارة القادمة</div>
+                                <div class="match-vs w-100 d-flex justify-content-around align-items-center">
+                                    <img src="imgs/Flag_of_Egypt.svg.png" class="egypt-icon" >
+                                    <span class="rounder-circle ">vs</span>
+                                    <img src="imgs/Flag_of_Egypt.svg.png" class="egypt-icon" >
+                                </div>
+                            </div>
+                            <div class="match-time d-flex justify-content-around">
+                                <div class="fs-8">8:00</div>
+                                <div class="fs-8">30-3-2020</div>
+                            </div>
+                       </div><!--/swiper-content-->
+                          <div class="match-logo text-center">
+                              <img src="imgs/caflogo_black.png" class="w-50 h-50 " alt="match-country">
+                          </div><!--/match-logo-->
+                      </div>
+
+                </div>
+            </div>    
+        </section>
+
+        <!-------------------------------------news------------------------------>
+        <section class="news bg-dark py-5 mt-4">
+                <!--------news-title----------->
+                <div class="footer-title d-flex justify-content-between px-3 mb-5">
+                    <div class="studio text-light">الاستوديو</div>
+                    <div class="more"><a>المزيد</a></div>
+                </div>
+
+                <!--------news-items----------->
+                <div class="news-items row gx-0 ml-auto justify-content-around">
+
+                        <a class="news-item d-flex  col-lg-6 col-md-6 col-md shadow rounded" href="#">
+                                <div class="news-img w-25  ">
+                                </div>
+                                <div class="news-content w-75 d-flex flex-column justify-content-center pe-3">
+                                        <h5>بطولة الامم الافريقية</h5>
+                                       <div class="like-icon"><i class="fa-regular fa-thumbs-up"></i></div> 
+                                        <div class="news-content-text d-flex justify-content-between w-75">
+                                            <span>مع شيماء</span>
+                                            <span>٣٠ اكتوبر٢٠٢٠</span>
+                                            <span>٢٠ مشاهد</span>
+                                        </div>
+                                </div><!--./news-content-->
+                        </a><!--./news-item-->
+
+                        <a class="news-item d-flex  col-lg-6 col-md-6 shadow rounded" href="#">
+                                <div class="news-img w-25  ">
+                                </div>
+                                <div class="news-content w-75 d-flex flex-column justify-content-center pe-3">
+                                        <h5>بطولة الامم الافريقية</h5>
+                                        <div class="like-icon"><i class="fa-solid fa-thumbs-up"></i></div>
+                                        <div class="news-content-text d-flex justify-content-between w-75">
+                                            <span>مع شيماء</span>
+                                            <span>٣٠ اكتوبر٢٠٢٠</span>
+                                            <span>٢٠ مشاهد</span>
+                                        </div>
+                                </div><!--./news-content-->
+                        </a><!--./news-item-->
+
+                        <a class="news-item d-flex  col-lg-6 col-md-6 shadow rounded" href="#">
+                                <div class="news-img w-25  ">
+                                </div>
+                                <div class="news-content w-75 d-flex flex-column justify-content-center pe-3">
+                                        <h5>بطولة الامم الافريقية</h5>
+                                        <div class="like-icon"><i class="fa-solid fa-thumbs-up"></i></div>
+                                        <div class="news-content-text d-flex justify-content-between w-75">
+                                            <span>مع شيماء</span>
+                                            <span>٣٠ اكتوبر٢٠٢٠</span>
+                                            <span>٢٠ مشاهد</span>
+                                        </div>
+                                </div><!--./news-content-->
+                        </a><!--./news-item-->
+
+                        <a class="news-item d-flex  col-lg-6 col-md-6 shadow rounded" href="#">
+                                <div class="news-img w-25  ">
+                                </div>
+                                <div class="news-content w-75 d-flex flex-column justify-content-center pe-3">
+                                        <h5>بطولة الامم الافريقية</h5>
+                                        <div class="like-icon">
+                                                <i class="fa-solid fa-thumbs-up">
+                                                </i>
+                                        </div>
+                                        <div class="news-content-text d-flex justify-content-between w-75">
+                                            <span>مع شيماء</span>
+                                            <span>٣٠ اكتوبر٢٠٢٠</span>
+                                            <span>٢٠ مشاهد</span>
+                                        </div>
+                                </div><!--./news-content-->
+                        </a><!--./news-item-->
+
+                </div><!--./news-items-->
+        </section>
+        <!-----------------------------------footer------------------------------>
+         <footer class="py-4">
+             <!---------footer title----->
+            <div class="footer-title d-flex justify-content-between  px-3 mb-5">
+                <div class="studio text-light">الاستوديو</div>
+                <div class="more"><a>المزيد</a></div>
+            </div>
+            <!-------swiper-carsoul----->
+            <div class="swiper mySwiper mySwiper3 ">
+                <div class="swiper-wrapper">
+                    <!--slider1-->
+                  <div class="swiper-slide slider3 ">      
+                            <div class="bg-dark shadow rounded card w-100 p-0">
+                                <figure class="video-player is-16by9">
+                                        <button class="play-btn "><i class="fa-solid fa-play"></i></button>
+                                        <video class="responsive-iframe video" width="100%" height="100%" src="imgs/videoplayback.mp4" poster="imgs/2022_1_30_13_34_29_370.jpg" ></video>
+                                </figure>
+                                      <div class="text-content card-body  px-1 pb-1  w-100 text-light">
+                                        <div class="text-content-tit mb-lg-4 mb-md-2 mb-sm-2">Africa nations</div>
+                                        <div class="text-content-items d-flex justify-content-between px-lg-2 px-md-1 px-sm-1 ">
+                                            <div class="date">٣٠ اكتوبر٢٠٢٠</div>
+                                            <div class="watchs">٢٠ مشاهدة</div>
+                                        </div>
+                                </div>  <!--/card-body-->
+                           </div><!--/card-->
+                    </div>
+
+                    <!--slider2-->
+                  <div class="swiper-slide slider3  ">      
+                            <div class="bg-dark shadow rounded card w-100 p-0">
+                                <figure class="video-player is-16by9">
+                                   <button class="play-btn "><i class="fa-solid fa-play"></i></button>
+                                   <video class="responsive-iframe video" width="100%" height="100%" src="imgs/videoplayback.mp4" poster="imgs/2022_1_30_13_34_29_370.jpg" ></video>
+                                </figure>
+                                  
+                                <!-- <video src="imgs/movie.mp4" class="d-block" muted autoplay loop></video> -->
+                                <div class="text-content card-body px-1 pb-1 w-100 text-light">
+                                        <div class="text-content-tit mb-lg-4 mb-md-2 mb-sm-2">Africa nations</div>
+                                        <div class="text-content-items d-flex justify-content-between  px-lg-2 px-md-1 px-sm-1 ">
+                                            <div class="date">٣٠ اكتوبر٢٠٢٠</div>
+                                            <div class="watchs">٢٠ مشاهدة</div>
+                                        </div>
+                                </div><!--/card-body-->
+                            </div><!--/card-->
+                    </div>
+
+                    <!--slider3-->
+                  <div class="swiper-slide slider3  ">      
+                     <div class="bg-dark shadow rounded card w-100 p-0">
+                        <figure class="video-player is-16by9">
+                                <button class="play-btn "><i class="fa-solid fa-play"></i></button>
+                                <video class="responsive-iframe video"  width="100%" height="100%" src="imgs/videoplayback.mp4" poster="imgs/2022_1_30_13_34_29_370.jpg" ></video>
+                        </figure>
+                                <div class="text-content card-body px-1 pb-1  w-100 text-light">
+                                <div class="text-content-tit mb-lg-4 mb-md-2 mb-sm-2">Africa nations</div>
+                                <div class="text-content-items d-flex justify-content-between  px-lg-2 px-md-1 px-sm-1 ">
+                                    <div class="date">٣٠ اكتوبر٢٠٢٠</div>
+                                    <div class="watchs">٢٠ مشاهدة</div>
+                                </div>
+                        </div>  <!--/card-body-->
+                     </div><!--/card-->
+                   </div><!--./slider2-->
+              </div><!--./swiper-warapper-->
+            </div>  <!--./swiper-->
+        </footer> 
+
+        <!----------------------------------collapse-responsive------------------>
+        <div class="collapse-responsive w-100 d-lg-none d-m-none d-sm-block ">
+                <ul class=" list d-flex flex-row justify-content-between list-unstyled p-2 m-0 bg-dark">
+                        <li class="list-item"><a class="d-flex flex-column" href="#"><i class="fa-solid fa-house"></i>الرئيسية</a></li>
+                        <li  class="list-item "><a class=" d-flex flex-column" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 990 990" style="enable-background:new 0 0 990 990;" xml:space="preserve">
+                                     <g>
+                                         <g>
+                                             <path d="M934.724,761.498V503.61H818.752c-2.595,4.479-7.428,7.5-12.977,7.5H631.07c-5.549,0-10.383-3.021-12.978-7.5H510V772.6    h413.619C929.752,772.601,934.724,767.629,934.724,761.498z M614.62,654.344c0,8.284-6.716,15-15,15s-15-6.716-15-15V536.64    c0-8.283,6.716-15,15-15s15,6.717,15,15V654.344z M805.775,707.654H631.07c-8.284,0-15-6.717-15-15c0-8.284,6.716-15,15-15    h174.705c8.283,0,15,6.716,15,15C820.775,700.937,814.059,707.654,805.775,707.654z"/>
+                                             <path d="M66.381,772.601H480V503.61h-75.63v145.736c0,8.284-6.716,15-15,15s-15-6.716-15-15V503.61H167.482v145.736    c0,8.284-6.716,15-15,15c-8.284,0-15-6.716-15-15V503.61H55.276v257.887C55.276,767.629,60.248,772.601,66.381,772.601z     M183.573,675.432h174.705c8.284,0,15,6.717,15,15c0,8.284-6.716,15-15,15H183.573c-8.284,0-15-6.716-15-15    C168.573,682.149,175.289,675.432,183.573,675.432z"/>
+                                             <path d="M631.07,481.11h174.705c5.549,0,10.382,3.021,12.977,7.5h115.972V228.501c0-6.133-4.972-11.104-11.104-11.104H510V488.61    h108.093C620.688,484.13,625.521,481.11,631.07,481.11z M824.089,337.32c0-8.284,6.716-15,15-15s15,6.716,15,15v117.705    c0,8.283-6.716,15-15,15s-15-6.717-15-15V337.32z M631.07,284.566h174.705c8.283,0,15,6.716,15,15c0,8.284-6.717,15-15,15H631.07    c-8.284,0-15-6.716-15-15C616.07,291.283,622.786,284.566,631.07,284.566z"/>
+                                             <path d="M137.482,340.652c0-8.284,6.716-15,15-15c8.284,0,15,6.716,15,15V488.61H374.37V340.652c0-8.284,6.716-15,15-15    s15,6.716,15,15V488.61H480V217.397H66.381c-6.133,0-11.104,4.971-11.104,11.104V488.61h82.205V340.652z M183.573,284.566h174.705    c8.284,0,15,6.716,15,15c0,8.284-6.716,15-15,15H183.573c-8.284,0-15-6.716-15-15    C168.573,291.283,175.289,284.566,183.573,284.566z"/>
+                                             <path d="M962.879,162.158H27.121C12.167,162.158,0,174.589,0,189.872v610.257c0,15.282,12.167,27.714,27.121,27.714h935.758    c14.955,0,27.121-12.432,27.121-27.714V189.872C990,174.589,977.833,162.158,962.879,162.158z M960,797.841H30V192.158h930    V797.841z"/>
+                                         </g>
+                                     </g>
+                                     <g></g>
+                                     <g></g>
+                                     <g></g>
+                                     <g></g>
+                                     <g></g>
+                                     <g></g>
+                                     <g></g>
+                                     <g></g>
+                                     <g></g>
+                                     <g></g>
+                                     <g></g>
+                                     <g></g>
+                                     <g></g>
+                                     <g></g>
+                                     <g></g>
+                            </svg>
+                           النتائج
+                           </a>
+                        </li>
+                        <li  class="list-item"><a class=" d-flex flex-column" href="#"><i class="fa-solid fa-chart-pie"></i>الاستوديو</a></li>
+                        <li  class="list-item  "><a class=" d-flex flex-column" href="#"><i class="fa-solid fa-microphone-lines"></i>الاستوديو</a></li>
+                        <li  class="list-item"><a class=" d-flex flex-column" href=""><i class="fa-solid  fa-bars"></i>المزيد</a></li>
+                </ul>
+        </div>
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.5/swiper-bundle.min.js" integrity="sha512-ox3xCWNzq3G1a72+HsDsfYmcw2p7B+P3R8B33pjMQnxw3mEIc/oSuU0Is6Ti+KpKQcWoWVuYV2KhAJBYP+qhsw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+       
+       
+       
+       <script>
+
+        const videoPlayer= document.querySelectorAll('.video-player')
+        const video= document.querySelectorAll('.video')
+        const playBtn=document.querySelectorAll('.play-btn')
+        
+          //play video pause video
+        for(let i=0;i<playBtn.length ;i++){
+                playBtn[i].addEventListener('click',(e)=>{
+
+                if(video[i].paused){
+                        video[i].play();
+                        video[i].requestFullscreen();
+                        playBtn[i].innerHtml='<i class="fa-solid fa-pause"></i>'
+                }
+                else{
+                        video[i].pause()
+                        playBtn[i].textContent='pause'
+                }
+        }
+        )}
+
+        //toggle menu
+        function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+         }
+
+        function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+         }
+
+
+        
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 7,
+            centeredSlides: false,
+            spaceBetween: 30,
+            grabCursor: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            slidesPerView: 2,
+            centeredSlides: true,
+            spaceBetween: 30,
+            grabCursor: true,
+            loop:true,
+            pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        });
+        var swiper3 = new Swiper(".mySwiper3", {
+            slidesPerView: "3",
+            centeredSlides: true,
+            spaceBetween: 15,
+            grabCursor: true,
+            loop:false,
+            breakpoints:{
+              
+                240: { slidesPerView: 1 , centeredSlides: false},
+                340:{slidesPerView: 3 , centeredSlides: false }
+               ,
+
+            }
+
+        });
+        </script>
+
+   </body>
+</html>
